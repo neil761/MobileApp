@@ -13,6 +13,7 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 28, 28, 28),
       appBar: AppBar(
         title: Text('Arsenal',
                  style: TextStyle(
@@ -21,151 +22,283 @@ class Profile extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 75, 83, 32),
       ),
       body: Container(
-        margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
         child: Column(
           children: [
             Container(
+              padding: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 52, 52, 52),
+              ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  // Guns - Selected
                   Container(
-                    child: Text('User Profile',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30
-                    ),),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 24),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      'Guns',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 24),
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      'Operators',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color:  Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
+
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.account_circle_rounded, size: 100,)
+                  Icon(Icons.account_circle_rounded, size: 100, color: Colors.white,)
                 ],
               ),
             ),
-            Column(
-              children: [
-                Container(
-                  margin: EdgeInsets.fromLTRB(30, 20, 0, 0),
+            Container(
+              alignment: Alignment.topLeft,
+              margin: EdgeInsets.only(top: 10, left: 20),
+              child: Column(
+                children: [
+                 Container(
                   child: Row(
-                  children: [
-                    Container(
-                      child: Text('Name:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(20, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            size: 80,
+                            color: Colors.black,
+                          ),
+                          Text(
+                            'AK47',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                ),
-                Container(
+                  ),
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(50, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.person,
+                           size: 80,
+                            color: Colors.black
+                          ),
+                          Text(
+                            'AK117',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+                 ),
+                 Container(
                   child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
-                      child: Text('Neil Andrew T. Alvarez:'),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(20, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            size: 80,
+                            color: Colors.black,
+                          ),
+                          Text(
+                            'EM-2',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
+                  ),
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(50, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.person,
+                           size: 80,
+                            color: Colors.black
+                          ),
+                          Text(
+                            'Oden',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+                 ),
+                 Container(
                   child: Row(
-                  children: [
-                    Container(
-                      child: Text('Email:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(20, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            size: 80,
+                            color: Colors.black,
+                          ),
+                          Text(
+                            'M16',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                ),
-                Container(
+                  ),
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(50, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.person,
+                           size: 80,
+                            color: Colors.black
+                          ),
+                          Text(
+                            'Man-O-War',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+                 ),
+                 Container(
                   child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
-                      child: Text('neilandrew03@gmail.com'),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(20, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            size: 80,
+                            color: Colors.black,
+                          ),
+                          Text(
+                            'Grau',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
-                  child: Row(
-                  children: [
-                    Container(
-                      child: Text('Company:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),),
+                  ),
+                  Card(
+                    margin: const EdgeInsets.fromLTRB(50, 10, 10, 10),
+                    child: SizedBox(
+                      width: 120,
+                      height: 120,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.person,
+                           size: 80,
+                            color: Colors.black
+                          ),
+                          Text(
+                            'M4',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ],
-                ),
-                ),
-                Container(
-                  child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
-                      child: Text('Batangas State University TNEU Balayan'),
-                    ),
-                  ],
-                ),
-                ),
-                Container(
-                  child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
-                      child: Text('Contact Number:',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),),
-                    ),
-                  ],
-                ),
-                ),
-                Container(
-                  child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
-                      child: Text('09876543212'),
-                    ),
-                  ],
-                ),
-                ),
-                Container(
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.fromLTRB(0, 250, 0, 0),
-                        width: 300,
-                       child: ElevatedButton(onPressed: (){},
-                 child: Text('Logout',
-                 style: TextStyle(
-                  color: Colors.white,
-                 ),),
-                 style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 75, 83, 32)),
-                )
-                        
-                      )
-                    ]
-                  )
-
-                 
-                 )
-              ],
-            )
+                  ),
+                ],
+              ),
+                 ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
