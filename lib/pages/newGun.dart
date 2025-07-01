@@ -25,7 +25,7 @@ class _NewGunState extends State<NewGun> {
         backgroundColor: const Color.fromARGB(255, 75, 83, 32),
       ),
       body: Container(
-        margin: EdgeInsets.all(16),
+        margin: EdgeInsets.all(15),
         child: Form(
           key: _formKey,
           child: Column(
